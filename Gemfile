@@ -11,6 +11,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 
 gem 'devise'
+gem 'simple_form'
 
 
 # Use Uglifier as compressor for JavaScript assets

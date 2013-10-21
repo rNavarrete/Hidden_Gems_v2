@@ -1,0 +1,20 @@
+<h2>Listing Videos</h2>
+
+<table class="table table-hover table-bordered">
+  <thead>	
+  <tr>	
+    <th>Artist</th>
+    <th>Song Title</th>
+    <th>Options</th>
+  </tr>
+  </thead>
+  <tr><% @video.each do |video| %>
+  	<tbody>
+    <td><%= "#{video.artist}" %></td>
+    <td><%= "#{video.song}" %></td>
+    <td><%= link_to "Delete", video_path(video), :method => "delete", class: "btn btn-danger", data: {confirm: "Are you sure?"} %> <%= link_to "Edit", edit_video_path(video), class: "btn btn-warning"%></td> 
+  </tr>
+  </tbody>
+<% end %>
+</table>
+

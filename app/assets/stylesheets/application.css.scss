@@ -12,3 +12,14 @@
  *= require_tree .
  *= require bootstrap
  */
+
+@import "bootstrap";
+body {
+  padding-top: 60px;
+}
+
+.navbar .brand {
+    overflow: visible;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
